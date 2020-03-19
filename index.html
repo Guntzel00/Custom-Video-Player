@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Questrial&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/progess.css" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video PLayer</title>
+  </head>
+  <body>
+    <h1>Custom Video Player</h1>
+    <div class="container">
+      <div class="video-player">
+        <video
+          src="Video/Arraial-do-cabo.mp4"
+          class="screen"
+          id="video"
+          poster="IMG/Arraial_photo.jpg"
+        ></video>
+        <div class="controls">
+          <button class="btn" id="play">
+            <i class="fa fa-play fa-2x"></i>
+          </button>
+          <button class="btn" id="restart">
+            <i class="fa fa-undo fa-2x"></i>
+          </button>
+          <input
+            type="range"
+            id="progress"
+            class="progress"
+            min="0"
+            max="100"
+            step="0.1"
+            value="0"
+          />
+          <button class="btn" id="expand">
+            <i class="fa fa-expand fa-2x"></i>
+          </button>
+          <button class="btn" id="volume">
+            <i class="fa fa-volume-up fa-2x"></i>
+          </button>
+          <span class="timestamp" id="timestamp">00:00</span>
+        </div>
+      </div>
+      <div class="sidebar">
+        <h3>About</h3>
+        <p>
+          Arraial do Cabo, 45km east of Saquarema, is surrounded by gleaming
+          white sand dunes and offers breathtaking beaches without half the
+          touristy fuss of neighboring Búzios. Arraial is home to a working
+          fishing port, Porto do Forno, which lends it a welcoming working-class
+          demeanor. Some of the best beaches – pristine swaths of gorgeous sand
+          and bright-green waters – are within an easy 15-minute stroll of the
+          downtown bus station, while others are just a short boat ride away.
+          Arraial is a renowned diving destination, and it’s also a good place
+          to observe humpback whales (Megaptera novaeangliae), whose migration
+          routes pass directly offshore.
+        </p>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

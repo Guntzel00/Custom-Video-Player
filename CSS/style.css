@@ -1,0 +1,88 @@
+:root {
+  --primary-color: #44e3e9;
+  --secondary-color: #41a3a7;
+}
+
+/* Reset */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Questrial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  background: rgb(233, 236, 236);
+}
+
+/* General */
+
+.container {
+  display: flex;
+  padding: 3rem;
+}
+
+.btn {
+  color: var(--primary-color);
+  border: none;
+  /* margin: 0 0.25rem; */
+  padding: 0 0.5rem;
+  background: inherit;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: var(--secondary-color);
+}
+
+/* About */
+
+.sidebar {
+  box-shadow: var(--primary-color) 10px 10px;
+  background: var(--secondary-color);
+  border-radius: 5px;
+  color: #fff;
+  margin: 1rem;
+  padding: 1rem;
+  text-align: justify;
+  width: 30%;
+  flex-grow: 0.3fr;
+}
+
+.sidebar h3 {
+  padding-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+/* Video */
+.video-player {
+  padding: 1rem;
+  width: 70%;
+}
+
+.screen {
+  width: 100%;
+  object-fit: cover;
+  outline: none;
+}
+
+/* Controls */
+
+.controls {
+  background: #333;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: var(--primary-color);
+  padding: 0.75rem;
+  border-radius: 5px;
+  font-weight: bold;
+}
